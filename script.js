@@ -39,7 +39,14 @@ if (highScore === null || highScore === undefined) {
     highScore = parseInt(highScore); // Convert to a number
 }
 
+// Attach a click event listener to the restart button
+var restartButton = document.getElementById('restart-button');
+restartButton.addEventListener('click', function () {
+    restartGame();
+});
+
 window.onload = function () {
+	
 	// Set board height and width
 	board = document.getElementById("board");
 	board.height = total_row * blockSize;
@@ -156,4 +163,28 @@ function placeFood() {
 	
 	//in y coordinates.
 	foodY = Math.floor(Math.random() * total_row) * blockSize;
+}
+//Reset the game
+function resetGame() {
+    // Reset the snake's position
+    snakeX = blockSize * 5;
+    snakeY = blockSize * 5;
+    speedX = 0;
+    speedY = 0;
+    snakeBody = [];
+
+    // Reset the score
+    score = 0;
+
+    // Reset game over flag
+    gameOver = false;
+
+    // Randomize the initial food position
+    randomizeFoodPosition();
+}
+
+// Call resetGame() when the game is over and the player chooses to restart
+function restartGame() {
+    resetGame();
+    // Additional code to start the game again
 }
