@@ -1,0 +1,37 @@
+body{
+	text-align: center;
+}
+.matts{
+	font-size: 40px;
+	font-weight: bold;
+	color: blue;
+}
+#board {
+    width: auto;
+    height: auto;
+    border: 2px solid red; /* Border style and color */
+    position: absolute;
+	 top: 20vh;
+	left: 30vw;
+}
+#avatar {
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    border-radius: 50%; /* Make it a circle (optional) */
+    position: absolute; /* Position it as needed */
+     bottom: 2vh;
+    left: 20%;
+}
+#avatar-label{
+	position: absolute;
+	bottom: 2vh;
+	left: 40%;
+}
+.user{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 20vw;
+	height: 78vh;
+	background-color: goldenrod;
+}
