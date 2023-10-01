@@ -12,3 +12,6 @@ Score tracking to monitor your performance.
 High score feature to challenge your best score.
 Customizable player name and avatar.
 Responsive design for play on various devices.
+
+NB:
+Only on PCs at the moment.
