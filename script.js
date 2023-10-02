@@ -188,3 +188,24 @@ function restartGame() {
     resetGame();
     // Additional code to start the game again
 }
+//Greeting depending on time
+function getGreeting() {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+
+    let greeting;
+
+    if (currentHour >= 5 && currentHour < 12) {
+        greeting = `Good morning!, ${playerName}`;
+    } else if (currentHour >= 12 && currentHour < 18) {
+        greeting = `Good afternoon!, ${playerName}`;
+    } else {
+        greeting = `Good Evening!, ${playerName}`;
+    }
+
+    return greeting;
+}
+//select greeting message
+var greetingMessage = document.getElementById("greeting-message");
+const greeting = getGreeting();
+greetingMessage.textContent = greeting;
