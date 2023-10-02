@@ -4,7 +4,7 @@ body{
 .matts{
 	font-size: 40px;
 	font-weight: bold;
-	color: blue;
+	color: red;
 }
 #board {
     width: auto;
@@ -13,6 +13,12 @@ body{
     position: absolute;
 	 top: 20vh;
 	left: 30vw;
+}
+#greeting-message{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	
 }
 #restart-button{
 	position: absolute;

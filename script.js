@@ -196,11 +196,11 @@ function getGreeting() {
     let greeting;
 
     if (currentHour >= 5 && currentHour < 12) {
-        greeting = `Good morning!, ${playerName}`;
+        greeting = `Good morning, ${playerName}!`;
     } else if (currentHour >= 12 && currentHour < 18) {
-        greeting = `Good afternoon!, ${playerName}`;
+        greeting = `Good afternoon, ${playerName}!`;
     } else {
-        greeting = `Good Evening!, ${playerName}`;
+        greeting = `Good Evening, ${playerName}!`;
     }
 
     return greeting;
