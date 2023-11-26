@@ -14,4 +14,4 @@ Customizable player name and avatar.
 Responsive design for play on various devices.
 
 NB:
-Only on PCs at the moment.
+Only on PCs at the moment though with time it will be responsive.
